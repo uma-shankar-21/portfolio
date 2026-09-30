@@ -18,6 +18,5 @@ export function Hero({ onContact }: { onContact: () => void }) {
       <div className="signal-card"><div className="signal-head"><span className="signal-label">SYSTEMS / THINKING</span><span className="signal-live">● ACTIVE</span></div><div className="signal-visual"><div className="signal-ring ring-one"/><div className="signal-ring ring-two"/><div className="signal-ring ring-three"/><div className="signal-core"><Icon name="spark" /></div><span className="signal-node node-one"/><span className="signal-node node-two"/><span className="signal-node node-three"/></div><div className="signal-footer"><span>LLM</span><i/><span>BACKEND</span><i/><span>PRODUCT</span></div></div>
       <span className="hero-coordinate">17° 26′ 14.6″ N&nbsp;&nbsp; 78° 26′ 44.1″ E</span>
     </div>
-    <a className="scroll-cue" href="#about"><span className="scroll-line" /> SCROLL TO EXPLORE</a>
   </section>;
 }

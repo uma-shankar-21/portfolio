@@ -10,7 +10,7 @@ const areas = [
 
 export function About() {
   return <section className="section-wrap section-block" id="about">
-    <Reveal className="section-heading-row"><div><p className="eyebrow">01 / ABOUT</p><h2>Engineering with<br /><span>the whole system in mind.</span></h2></div><p className="section-lede">I work across the AI, backend, and product layers—connecting emerging model capabilities to reliable, useful software.</p></Reveal>
+    <Reveal className="section-heading-row"><div><p className="eyebrow"></p><h2>Engineering with<br /><span>the whole system in mind.</span></h2></div><p className="section-lede">I work across the AI, backend, and product layers—connecting emerging model capabilities to reliable, useful software.</p></Reveal>
     <div className="about-grid">{areas.map((area, i) => <Reveal key={area.n} delay={i * 70}><article className="about-card"><div className="about-card-top"><span>{area.n}</span><Icon name="arrow" /></div><h3>{area.title}</h3><p>{area.copy}</p></article></Reveal>)}</div>
   </section>;
 }
