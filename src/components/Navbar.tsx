@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Icon } from './Icons';
 import type { Theme } from '../useTheme';
+import { publicPath } from '../data/publicPaths';
 
 const items = [['About', 'about'], ['Experience', 'experience'], ['Projects', 'projects'], ['Skills', 'skills'], ['Achievements', 'achievements'], ['Contact', 'contact']] as const;
 
@@ -34,9 +35,9 @@ export function Navbar({ onContact, theme, onToggleTheme }: { onContact: () => v
       <nav className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`} aria-label="Main navigation">
         {items.map(([label, id]) => id === 'contact' ? <button key={id} className="nav-link" onClick={handleContact}>{label}</button> : <a key={id} className="nav-link" href={`#${id}`} onClick={closeMenu}>{label}</a>)}
         {toggle(true)}
-        <a className="nav-mobile-resume" href="/Uma_Shankar_Resume.pdf" download="Uma_Shankar_Resume.pdf" onClick={closeMenu}>Download Resume <Icon name="download" /></a>
+        <a className="nav-mobile-resume" href={publicPath('Uma_Shankar_Resume.pdf')} download="Uma_Shankar_Resume.pdf" onClick={closeMenu}>Download Resume <Icon name="download" /></a>
       </nav>
-      <div className="nav-actions">{toggle()}<a className="button button-quiet nav-download" href="/Uma_Shankar_Resume.pdf" download="Uma_Shankar_Resume.pdf">Download Resume <Icon name="download" /></a></div>
+      <div className="nav-actions">{toggle()}<a className="button button-quiet nav-download" href={publicPath('Uma_Shankar_Resume.pdf')} download="Uma_Shankar_Resume.pdf">Download Resume <Icon name="download" /></a></div>
       <button className="menu-toggle" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Icon name={menuOpen ? 'close' : 'menu'} /></button>
     </div>
   </header>;
