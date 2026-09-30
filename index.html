@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d0c" />
+    <meta name="description" content="Uma Shankar Kommireddy is an AI/ML & Full Stack Engineer building LLM applications, backend systems, and thoughtful digital products." />
+    <meta property="og:title" content="Uma Shankar Kommireddy | AI/ML & Full Stack Engineer" />
+    <meta property="og:description" content="Building intelligent systems that connect LLMs, backend infrastructure, and real-world products." />
+    <meta property="og:type" content="website" />
+    <title>Uma Shankar Kommireddy | AI/ML &amp; Full Stack Engineer</title>
+    <script>
+      (() => {
+        let theme;
+        try { theme = localStorage.getItem('uma-portfolio-theme'); } catch {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia?.('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'light' ? '#f7f8f5' : '#0b0d0c');
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
