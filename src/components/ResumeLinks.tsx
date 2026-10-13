@@ -1,3 +1,5 @@
+import { Icon } from './Icons';
+
 const resumeUrl = 'https://raw.githubusercontent.com/uma-shankar-21/portfolio/main/Uma_Shankar_Resume.pdf';
 
 export function ResumeLinks({ compact = false }: { compact?: boolean }) {
